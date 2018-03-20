@@ -1,0 +1,22 @@
+﻿<Window x:Class="Tubes02Stima.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tubes02Stima"
+        mc:Ignorable="d"
+        Title="Tubes 2 Strategi Algoritma" Height="330" Width="380" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" ResizeMode="NoResize">
+    <Grid Height="296" VerticalAlignment="Top" Margin="0,0,-6,-3">
+        <Button x:Name="btnOperate" Content="Operate" Margin="148,0,157,19" VerticalAlignment="Bottom" Click="btnOperate_Click"/>
+        <Label x:Name="lblBFS" Content="-" HorizontalAlignment="Left" Margin="294,59,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.75,0.577"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="2" Margin="504,150,-70,0" VerticalAlignment="Top" Width="3"/>
+        <Label Content="Hasil DFS :" HorizontalAlignment="Left" Margin="30,33,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Hasil BFS :" HorizontalAlignment="Right" Margin="0,33,44,0" VerticalAlignment="Top" FontWeight="Bold" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="txtDFSResult" HorizontalAlignment="Left" Height="213" Margin="10,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" VerticalScrollBarVisibility="Visible" IsReadOnly="True"/>
+        <TextBox x:Name="txtBFSResult" Height="213" Margin="0,64,16,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalScrollBarVisibility="Visible" IsReadOnly="True" HorizontalAlignment="Right" Width="120"/>
+        <Label x:Name="lblTitle" Content="Topological Sorting dengan DFS dan BFS" Margin="10,7,18,0" VerticalAlignment="Top" FontWeight="Bold" HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontFamily="Trajan Pro" FontSize="13" Width="352"/>
+        <TextBox x:Name="txtBoxFileName" Height="23" Margin="148,126,157,0" TextWrapping="Wrap" Text="input.txt" VerticalAlignment="Top" TextAlignment="Center" HorizontalContentAlignment="Center" AcceptsReturn="True"/>
+        <Label Content="Filename :" Margin="148,100,157,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Medium"/>
+
+    </Grid>
+</Window>
